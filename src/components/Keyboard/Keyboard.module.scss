@@ -1,0 +1,41 @@
+.wrapper {
+  font-size: 1.6rem;
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+
+  .row-item {
+    display: flex;
+    gap: 8px;
+  }
+}
+
+.function-key {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 24px;
+  min-height: 32px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  background-color: var(--color-light-blue);
+  user-select: none;
+  cursor: pointer;
+  transition: 0.1s;
+
+  &:active {
+    background-color: color-mix(in srgb, gray 90%, black);
+    transform: scale(1.1);
+    transform-origin: center bottom;
+  }
+}

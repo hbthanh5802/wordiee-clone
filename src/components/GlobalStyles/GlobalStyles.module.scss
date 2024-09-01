@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Color pallette */
+  --color-green: #2cffba;
+  --color-button-hover: #00a06b;
+  --color-dark-green: #151924;
+  --color-white: #f9f9f9;
+  --color-light-blue: #6eb9e3;
+
+  /* Border radius */
+  --border-rounded-md: 8px;
+  --border-rounded: 14px;
+
+  /* Font family */
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+html {
+  font-family: var(--font-poppins);
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-height: 100dvh;
+  text-align: left;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: var(--color-dark-green);
+}
+
+.GlobalStyles {
+  width: 100%;
+  height: 100%;
+}

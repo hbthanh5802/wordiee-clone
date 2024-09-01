@@ -1,0 +1,22 @@
+.wrapper {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 24px;
+  min-height: 32px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  background-color: gray;
+  user-select: none;
+  cursor: pointer;
+  transition: 0.1s;
+
+  &:active {
+    background-color: color-mix(in srgb, gray 90%, black);
+    transform: scale(1.1);
+    transform-origin: center bottom;
+  }
+}
