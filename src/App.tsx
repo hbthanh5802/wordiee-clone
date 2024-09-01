@@ -3,7 +3,6 @@ import Board from '@/components/Board';
 import Keyboard from '@/components/Keyboard';
 import './App.css';
 import { useAppSelector } from './hooks/reduxHooks';
-import Modal from './components/Modal';
 
 function App() {
   const { board } = useAppSelector((state) => state.board);
